@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cibersegurança</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="protecao.png">
 </head>
 <body>
-
+    <!-- Seção de cabeçalho com o título principal do documento -->
     <header>
-        <h1 = class="titulo">Cibersegurança - Boas praticas de segurança na sua rede</h1>
-        <hr>
+        <h1 class="titulo">Cibersegurança - Boas práticas de segurança na sua rede</h1>
     </header>
-    <main>
+    <main id="conteudo-principal">
         <h2>Email</h2>
             <h3>Endereço de email:</h3>
             <p>
@@ -35,12 +37,11 @@
                 Então, não aceite qualquer cookie de qualquer site, leia antes ou só rejeite todos.
             </p>
         <hr>
-        <!---imagem amigável-->
-        <img src="cibersegurança.jpg" alt="Segurança Da Informação">
+        <img src="cibersegurança.jpg" alt="Segurança Da Informação" class="img-destaque">
         <p>Fonte da imagem: <a href="https://stock.adobe.com/pt/search?k=cybersecurity+background" target="blank">Clique aqui</a></p>
-    <ol>
-        <!--Lista ordenada-->
-        <h2>Fatos interessantes</h2>
+    
+    <h2>Fatos interessantes</h2>
+    <ol class="lista-customizada">
         <li>
             <p>
                 Para profissionais da segurança, Windows não é o sistema ideal. Ele tem muitas ferramentas que barram
@@ -56,6 +57,7 @@
                 White hats, são aqueles que trabalham com ética, coseguem fazer o mal, porém escolhem proteger.
                 Grey hats, são hackers ou especialistas em segurança cibernética que operam em uma zona ética ambígua.
                 Black hats, são cibercriminosos que violam sistemas de segurança para roubo de dados, fraudes financeiras ou destruição, agindo sem ética e ilegalmente.
+            </p>
         </li>
         <li>
             <p>
@@ -66,19 +68,23 @@
             </p>
         </li>
     </ol>
-      <ul>
-            <!--Lista não ordenada-->
-            <h2>Links pra se aprofundar no assunto</h2>
-            <li>
+
+    <h2>Links para se aprofundar no assunto</h2>
+    <ul class="lista-links">
+             <li>
                 <a href="index1.html">Proteção de dados</a>
             </li>
             <li>
-                <a href="index2.html">Por que você deveria ter uma senha forte</a>
+                <a href="SenhaForte.html">Por que você deveria ter uma senha forte</a>
             </li>
             <li>
                 <a href="index3.html">Virus, como evitar e como se prevenir</a>
             </li>
         </ul>
     </main>
+    <!-- Rodapé contendo informações de direitos autorais -->
+    <footer id="rodape-pagina">
+        <p>&copy; 2024 - Guia de Cibersegurança</p>
+    </footer>
 </body>
 </html>
