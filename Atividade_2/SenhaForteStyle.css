@@ -10,7 +10,7 @@ body {
     padding: 20px;
 }
 
-/* Agrupamento de seletores para estilização padronizada de títulos */
+
 h1, h2 {
     color: #2c3e50;
     text-align: center;
@@ -26,14 +26,14 @@ h1, h2 {
 #container-senha {
     background-color: white;
     max-width: 700px;
-    margin: 30px auto; /* Margem - Box Model 1 */
-    padding: 25px;      /* Padding - Box Model 2 */
-    border: 3px solid #3498db; /* Borda - Box Model 3 / Propriedade de borda 1 */
-    border-radius: 12px;        /* Propriedade de borda 2 */
+    margin: 30px auto; 
+    padding: 25px;     
+    border: 3px solid #3498db; 
+    border-radius: 12px;       
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* Estilização personalizada de listas utilizando seletores de classe */
+
 .lista-requisitos {
     list-style-type: circle;
     background-color: #f7f9fc;
@@ -46,7 +46,7 @@ h1, h2 {
     font-weight: 500;
 }
 
-/* Efeito hover solicitado no Extra para melhorar a interatividade */
+
 .link-voltar {
     display: inline-block;
     color: #3498db;
@@ -61,7 +61,7 @@ h1, h2 {
     text-decoration: underline;
 }
 
-/* Definições de layout e cores para o rodapé da página secundária */
+
 #rodape-simples {
     margin-top: 50px;
     border-top: 1px solid #bdc3c7;
