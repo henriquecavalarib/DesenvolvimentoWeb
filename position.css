@@ -1,0 +1,42 @@
+.container{
+    height: 700px;
+    width: 700px;
+    border: 2px solid;
+    margin-top: 20px;
+}
+
+.static{
+    position: static;
+    background-color: rgb(0, 162, 255);
+    width: 100px;
+    height: 100px;
+    font-size: 10px;
+    justify-content: stretch;
+    align-items: stretch;
+}
+.relative{
+    position: relative;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    left: 50px;
+    font-size: 10px;
+}
+.absolute{
+    position: absolute;
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    font-size: 10px;
+
+}
+.fixed{
+    position: fixed;
+    background-color: yellow;
+    width: 700px;
+    height: 100px;
+    margin-top: 100px;
+    font-size: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
