@@ -10,11 +10,19 @@ header {
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
     border: 1px solid #ccc;
     background-color: #f9f9f9;
+
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #2c3e50;
 }
 
 .header-title {
+    font-family: 'Montserrat', sans-serif;
     font-size: 36px;
-    color: blue;
+    color: #0044cc; 
     margin: 0;
 }
 
@@ -22,8 +30,12 @@ header {
     margin: 5px 0;
     font-size: 14px;
     text-align: center;
+    font-family: 'Open Sans', sans-serif; 
 }
 
+body {
+    background-color: #1312
+}
 
 .products {
     background-color: white;
@@ -38,7 +50,28 @@ header {
     justify-content: space-around;
     gap: 20px;
 }
+.badge {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    animation: pulse 1s infinite;
+}
 
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 .product-item {
     flex: 1;
     min-width: 300px;
