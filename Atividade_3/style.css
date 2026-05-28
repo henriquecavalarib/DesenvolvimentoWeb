@@ -1,4 +1,12 @@
 
+body {
+    background-color: #f0f2f5;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -10,13 +18,13 @@ header {
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
     border: 1px solid #ccc;
     background-color: #f9f9f9;
-
 }
 
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: #2c3e50;
+    font-size: 1.2rem;
 }
 
 .header-title {
@@ -33,10 +41,6 @@ h2 {
     font-family: 'Open Sans', sans-serif; 
 }
 
-body {
-    background-color: #1312
-}
-
 .products {
     background-color: white;
     max-width: 1200px;
@@ -45,20 +49,23 @@ body {
     border: 1px solid #ccc;
     border-radius: 15px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
+
 .badge {
-    display: inline-block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
     padding: 5px 10px;
-    background-color: red;
+    background-color: #e74c3c;
     color: white;
-    font-size: 20px;
+    font-size: 14px;
+    font-weight: bold;
     border-radius: 5px;
-    margin-top: 10px;
     animation: pulse 1s infinite;
+    z-index: 10;
 }
 
 @keyframes pulse {
@@ -73,18 +80,57 @@ body {
     }
 }
 .product-item {
-    flex: 1;
-    min-width: 300px;
-    max-width: 350px;
+    position: relative; 
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 20px;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 15px rgba(0,0,0,0.1);
 }
 
 .product-image {
     width: 100%;
-    height: auto;
+    height: 250px;
+    object-fit: contain;
+    margin-bottom: 15px;
 }
 
 .description {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
+    color: #666;
+}
+
+/* Rodapé */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 15px 15px 0 0;
+}
+
+.footer-content a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+@media (max-width: 600px) {
+    .header-title {
+        font-size: 24px;
+    }
+    
+    .products {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
 }
