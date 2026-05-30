@@ -1,30 +1,56 @@
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 50px;
-    background-color: #f4f4f4;
+    height: 100vh;
+    margin: 0;
 }
 
-h1 {
-    color: #333;
-}
 
 table {
-    width: 600px;
     border-collapse: collapse;
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 85%;
+    max-width: 900px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 3px solid #e65c00; /* Borda externa estilizada */
 }
 
+.titulo {
+    font-size: 45px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/*Formatação do cabeçalho e turno*/
+th, .turno {
+    background-color: #e65c00;
+    color: #ffffff; 
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*Formatação das células*/
+td {
+    background-color: #ffffff;
+    color: #444444;
+}
+
+/*Formatação das células*/
 th, td {
-    border: 1px solid #ddd;
-    padding: 12px;
-    text-align: left;
+    padding: 14px;
+    text-align: center; 
+    font-size: 0.95rem;
+    width: 12.5%; 
+    
 }
-
-th {
-    background-color: #0044cc;
-    color: white;
+/*Formatação das células*/
+th, td, tr {
+    border: 1px solid #dcdcdc;
 }
