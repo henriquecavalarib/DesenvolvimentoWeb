@@ -2,27 +2,43 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Portifolio - Henrique</title>
+    <title>Portfólio - Henrique</title>
 </head>
 <body>
-    <div id = "cabecalho">
-        <header >
-            <h1 id="nome">Henrique Cavalari Barros</h1> 
-            <img src="">
-            <button>Sobre mim</button>
-            <button>Habilidades/Conquistas</button>
-            <button>Como me vejo em 10 anos</button>
-        </header>
+    <header class="header">
+    <div class="particles-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
     </div>
-    <div id="body">
-        <main>
-            
+        <h1>Henrique Cavalari Barros</h1>
+        <div class="perfil-container">
+            <img src="HenriqueTrabalhoFinal.jpeg" alt="Foto de Henrique" class="foto-perfil">
+        </div>
+        <button class="apertou-botao" onclick="toggleDarkMode()">Alternar Modo</button>
+        <nav class="nav">
+            <button class="botao" onclick="navegar('index.html')">Sobre mim</button>
+            <button class="botao" onclick="navegar('habilidadeConquistas.html')">Habilidades</button>
+            <button class="botao" onclick="navegar('comomevejo.html')">Metas</button>
+        </nav>
+    </header>
+
+    <main class="corpo">
+            Sou um entusiasta pela cibersegurança  e o comportamento humano com a tecnologia. Tenho 18 anos de idade, acredito que mesmo sendo jovem,
+            tive conquistas que me orgulho, onde vi que mesmo nascendo sem um talento de ser um genio, meu esforço resultou em alguma coisa. Sou apaixonado por 
+            esportes, desde volei até mma, não sou dificil de agradar hahaha. Meu hobby predileto é pescar com meu pai, momento que posso me distrair e aproveitar
+            a natureza. Sou católico, e desejo proteger crianças da internet, por isso escolhi a area de cibersegurança.
         </main>
-    </div>
+
+    <footer class="footer">
+        <a href="https://www.linkedin.com/in/henrique-cavalari/" target="blank">LinkedIn</a>
+        <a href="https://github.com/henriquecavalarib" target="blank">GitHub</a>
+        <a href="mailto:henri.barros01@gmail.com" target="blank">Gmail</a>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

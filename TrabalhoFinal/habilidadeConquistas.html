@@ -1,11 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio - Henrique</title>
 </head>
 <body>
-    
+    <header class="header">
+        <h1>Henrique Cavalari Barros</h1>
+        <div class="perfil-container">
+            <img src="HenriqueTrabalhoFinal.jpeg" alt="Foto de Henrique" class="foto-perfil">
+        </div>
+        <button class="apertou-botao" onclick="toggleDarkMode()">Alternar Modo</button>
+        <nav class="nav">
+            <button class="botao" onclick="navegar('index.html')">Sobre mim</button>
+            <button class="botao" onclick="navegar('habilidadeConquistas.html')">Habilidades</button>
+            <button class="botao" onclick="navegar('comomevejo.html')">Metas</button>
+        </nav>
+    </header>
+
+    <main class="container">
+    <div class="habilidades-grid">
+        <article class="habilidade-card">
+            <h3>Python</h3>
+            <img src="Python.png" alt="Python">
+            <p>Uma linguagem que eu me divirto quando uso, busco aprofundar meu conhecimento para dominar essa linguagem e montar e desmontar scripts.</p>
+        </article>
+
+        <article class="habilidade-card">
+            <h3>Java</h3>
+            <img src="Java.png" alt="Java">
+            <p>Com certeza a linguagem que eu tenho mais dominio, justamente pela prática frequente, tanto na faculdade quando em projetos pessoais.</p>
+        </article>
+
+        <article class="habilidade-card">
+            <h3>Git/GitHub</h3>
+            <img src="git.png" alt="Git">
+            <p>Git/Github não é somente uma ferramenta, ja virou rotina, tanto em trabalhos da faculdade quanto nos projetos pessoais.</p>
+        </article>
+
+        <article class="habilidade-card">
+            <h3>Sist. Operacionais</h3>
+            <img src="Linux.png" alt="SO">
+            <p>Embora meu conhecimneto seja raso, acredito que seja essencial, não somente para cibersegurança, mas também para o conhecimento dos sistemas que utilizamos.</p>
+        </article>
+    </div>
+</main>
+
+    <footer class="footer">
+        <a href="https://www.linkedin.com/in/henrique-cavalari/" target="blank">LinkedIn</a>
+        <a href="https://github.com/henriquecavalarib" target="blank">GitHub</a>
+        <a href="mailto:henri.barros01@gmail.com" target="blank">Gmail</a>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
